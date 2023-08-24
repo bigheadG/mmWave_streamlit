@@ -118,8 +118,8 @@ def uartGetTLVdata(name):
 						# Calculate the mean of each column
 						column_means = df1.mean()
 						# Add the mean values as a new row to the DataFrame
-						df1 = df1.append(column_means, ignore_index=True)
-						print(df1)						
+						#df1 = df1.append(column_means, ignore_index=True)
+						#print(df1)						
 					
 				
 			
