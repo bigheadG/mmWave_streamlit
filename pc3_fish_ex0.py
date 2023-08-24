@@ -26,7 +26,7 @@ JB_select_df_flag 	= 1 # default 0, original; 1 for df DafaFrame mode more easie
 JB_limit_points_num	= 10 # limit the length of displaying on data points for easy reading only, Alert: pending extra one line for mean values
 JB_sensor1_height 	= 1.387 # unit: meter, Alert: depends on Sensor installation height   
 JB_signal_noise_TH 	= 120 # deafult 120
-JB_uart_port 		= "COM8" # via TX0 921600
+JB_uart_port 		= "/dev/tty.SLAB_USBtoUART" # via TX0 921600
 # Alert: did not consider the TILT angle for axis conversion please computed by yourself on y and z values, x not chnaged
 ############################################################################
 	
