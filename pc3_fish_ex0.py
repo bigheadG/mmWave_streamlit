@@ -57,8 +57,9 @@ def jb_axis_convertion(df, h=0):
 	df['x'] = dfc['z'] 
 	df['z'] = -dfc['x'] + h 
 	return df
-	
+B_select_df_flag = 0	
 def uartGetTLVdata(name):
+	global B_select_df_flag
 	fn_prev = 0
 	fn = 0
 	port.flushInput()
@@ -70,7 +71,7 @@ def uartGetTLVdata(name):
 			radar.headerShow()
 			print(f'fn: {fn} dck:{dck} v6:{len(v6)}\n')
 		
-		if fn_prev != fn:
+		if 0: # fn_prev != fn:
 			fn_prev = fn 			 			
 			if len(v6) != 0:
 				if JB_select_df_flag == 0:
